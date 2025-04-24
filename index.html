@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-   <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title></title>
-     <style>
-       h3 {
-         text-align: center;
-         padding: 10px;
-         background-color: #ee9336;
-         border-radius: 7px;
-         margin-top: 5px;
-         border: 3px solid 
-         #950a20;
-       }
-       body {
-         
-       }
-       
-       
-     </style>
-  </head>
-  <body>
-    <h3>Sobre Os Desenvolvedores do site</h3>
-  </body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre os Desenvolvedores</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    h2 {
+      text-align: center;
+      padding: 10px;
+      border-radius: 7px;
+      border: 4px;
+      margin-top: 5px;
+      border: 4px solid #a281ed;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Espaço entre as imagens */
+      margin-top: 20px;
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sobre os Desenvolvedores do Site</h2>
+  <div class="profile-container">
+    <img src="https://i.ibb.co/fGtjFK41/Screenshot-20250414-072959-Gallery.webp" alt="perfil 1" class="profile-image">
+    <img src="https://i.ibb.o/WWRhNh34/Screenshot-20250424-050331-Whats-App.webp" alt="perfil 2" class="profile-image">
+  </div>
+</body>
+</html>
